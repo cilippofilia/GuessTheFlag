@@ -11,6 +11,10 @@
 		1844E9372893077400168515 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844E9362893077400168515 /* ContentView.swift */; };
 		1844E9392893077500168515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1844E9382893077500168515 /* Assets.xcassets */; };
 		1844E93C2893077500168515 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1844E93B2893077500168515 /* Preview Assets.xcassets */; };
+		1844E9432893080700168515 /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844E9422893080700168515 /* Stacks.swift */; };
+		1844E94528930A3D00168515 /* ColorsAndFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844E94428930A3D00168515 /* ColorsAndFrames.swift */; };
+		1844E94728930D0900168515 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844E94628930D0900168515 /* Gradients.swift */; };
+		1844E94A28930F2400168515 /* ButtonsAndImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844E94928930F2400168515 /* ButtonsAndImages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		1844E9362893077400168515 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1844E9382893077500168515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1844E93B2893077500168515 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1844E9422893080700168515 /* Stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
+		1844E94428930A3D00168515 /* ColorsAndFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsAndFrames.swift; sourceTree = "<group>"; };
+		1844E94628930D0900168515 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		1844E94928930F2400168515 /* ButtonsAndImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsAndImages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			children = (
 				1844E9342893077400168515 /* GuessTheFlagApp.swift */,
 				1844E9362893077400168515 /* ContentView.swift */,
+				1844E94828930D1E00168515 /* Tutorials */,
 				1844E9382893077500168515 /* Assets.xcassets */,
 				1844E93A2893077500168515 /* Preview Content */,
 			);
@@ -65,6 +74,17 @@
 				1844E93B2893077500168515 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1844E94828930D1E00168515 /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				1844E9422893080700168515 /* Stacks.swift */,
+				1844E94428930A3D00168515 /* ColorsAndFrames.swift */,
+				1844E94628930D0900168515 /* Gradients.swift */,
+				1844E94928930F2400168515 /* ButtonsAndImages.swift */,
+			);
+			path = Tutorials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1844E9432893080700168515 /* Stacks.swift in Sources */,
+				1844E94728930D0900168515 /* Gradients.swift in Sources */,
 				1844E9372893077400168515 /* ContentView.swift in Sources */,
 				1844E9352893077400168515 /* GuessTheFlagApp.swift in Sources */,
+				1844E94528930A3D00168515 /* ColorsAndFrames.swift in Sources */,
+				1844E94A28930F2400168515 /* ButtonsAndImages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
