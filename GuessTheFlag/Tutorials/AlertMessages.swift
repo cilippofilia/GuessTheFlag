@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct AlertMessages: View {
+    @State private var showingAlert = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Show alert") {
+            showingAlert = true
+        }
+        .alert("Important message", isPresented: $showingAlert) {
+            Button("Delete", role: .destructive) { }
+            Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("Please read this!")
+        }
     }
 }
 
