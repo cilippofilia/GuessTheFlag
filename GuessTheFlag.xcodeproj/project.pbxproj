@@ -15,6 +15,7 @@
 		1844E94528930A3D00168515 /* ColorsAndFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844E94428930A3D00168515 /* ColorsAndFrames.swift */; };
 		1844E94728930D0900168515 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844E94628930D0900168515 /* Gradients.swift */; };
 		1844E94A28930F2400168515 /* ButtonsAndImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844E94928930F2400168515 /* ButtonsAndImages.swift */; };
+		1895133A2893B55D0058F2FD /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189513392893B55D0058F2FD /* AlertMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1844E94428930A3D00168515 /* ColorsAndFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsAndFrames.swift; sourceTree = "<group>"; };
 		1844E94628930D0900168515 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		1844E94928930F2400168515 /* ButtonsAndImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsAndImages.swift; sourceTree = "<group>"; };
+		189513392893B55D0058F2FD /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				1844E94428930A3D00168515 /* ColorsAndFrames.swift */,
 				1844E94628930D0900168515 /* Gradients.swift */,
 				1844E94928930F2400168515 /* ButtonsAndImages.swift */,
+				189513392893B55D0058F2FD /* AlertMessages.swift */,
 			);
 			path = Tutorials;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1844E9432893080700168515 /* Stacks.swift in Sources */,
+				1895133A2893B55D0058F2FD /* AlertMessages.swift in Sources */,
 				1844E94728930D0900168515 /* Gradients.swift in Sources */,
 				1844E9372893077400168515 /* ContentView.swift in Sources */,
 				1844E9352893077400168515 /* GuessTheFlagApp.swift in Sources */,
