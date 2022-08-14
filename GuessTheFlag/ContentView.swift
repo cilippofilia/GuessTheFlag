@@ -16,7 +16,9 @@ struct ContentView: View {
     @State private var scoreMessage = ""
 
     @State private var questionsAsked = 0
-    @State private var numberOfQuestions = 2
+    @State private var numberOfQuestions = 10
+
+    @State private var animationAmount = 0.0
 
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
@@ -48,12 +50,22 @@ struct ContentView: View {
                             .font(.largeTitle.weight(.semibold))
                     }
 
-                    ForEach(0..<3) { number in
+                    ForEach(0 ..< 3) { number in
                         Button {
                             flagTapped(number)
                         } label: {
-                            FlagImage(countries: countries, number: number)
-                            // Challenge from project 3
+                            if correctAnswer == number {
+                                // Challenge from project 3
+                                FlagImage(countries: countries, number: number)
+                                // Challenge 1 from project 6
+                                    .rotation3DEffect(.degrees(animationAmount),
+                                                      axis: (x: 0, y: 1, z: 0))
+                            } else {
+                                FlagImage(countries: countries, number: number)
+                                // Challenge 3 from project 6
+                                    .rotation3DEffect(.degrees(animationAmount),
+                                                      axis: (x: 0.3, y: 0.7, z: -0.3))
+                            }
                         }
                     }
                 }
@@ -94,12 +106,20 @@ struct ContentView: View {
 
             score += 1
             questionsAsked += 1
+
+            withAnimation {
+                animationAmount += 360
+            }
         } else {
             scoreTitle = "Wrong!"
             scoreMessage = "That's the flag of \(countries[number])"
 
             score -= 1
             questionsAsked += 1
+
+            withAnimation {
+                animationAmount += 360
+            }
         }
 
         showingScore = true
@@ -147,4 +167,9 @@ struct ContentView_Previews: PreviewProvider {
 
  Project 3 Challenge:
  ✅ 1. Go back to project 2 and replace the Image view used for flags with a new FlagImage() view that renders one flag image using the specific set of modifiers we had.
+
+ Project 6 Challenges:
+ ✅ 1. When you tap a flag, make it spin around 360 degrees on the Y axis.
+    2. Make the other two buttons fade out to 25% opacity.
+ ✅ 3. Add a third effect of your choosing to the two flags the user didn’t choose
 */
